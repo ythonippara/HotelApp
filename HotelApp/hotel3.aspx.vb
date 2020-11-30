@@ -1,4 +1,4 @@
-﻿Public Class hotel1
+﻿Public Class hotel3
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

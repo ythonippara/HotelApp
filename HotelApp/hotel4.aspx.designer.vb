@@ -12,7 +12,7 @@ Option Explicit On
 
 
 
-Partial Public Class hotel1
+Partial Public Class hotel4
 
     '''<summary>
     '''form1 control.

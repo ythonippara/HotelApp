@@ -92,10 +92,56 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
     <Content Include="hotel1.aspx" />
+    <Content Include="hotel2.aspx" />
+    <Content Include="hotel3.aspx" />
+    <Content Include="hotel4.aspx" />
+    <Content Include="hotel5.aspx" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="hotel1.aspx.designer.vb">
+      <DependentUpon>hotel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hotel1.aspx.vb">
+      <DependentUpon>hotel1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="hotel2.aspx.designer.vb">
+      <DependentUpon>hotel2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hotel2.aspx.vb">
+      <DependentUpon>hotel2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="hotel3.aspx.designer.vb">
+      <DependentUpon>hotel3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hotel3.aspx.vb">
+      <DependentUpon>hotel3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="hotel4.aspx.designer.vb">
+      <DependentUpon>hotel4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hotel4.aspx.vb">
+      <DependentUpon>hotel4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="hotel5.aspx.designer.vb">
+      <DependentUpon>hotel5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hotel5.aspx.vb">
+      <DependentUpon>hotel5.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="menu.Master.designer.vb">
+      <DependentUpon>menu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="menu.Master.vb">
+      <DependentUpon>menu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -115,13 +161,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="hotel1.aspx.designer.vb">
-      <DependentUpon>hotel1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="hotel1.aspx.vb">
-      <DependentUpon>hotel1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -132,6 +171,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="menu.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
