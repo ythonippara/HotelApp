@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml">
     <head id = "Head1" runat = "server">
-        <title>Connection</title>
+        <title>View Staff Info</title>
         <script runat = "server">
             Public Class PictureBox
                 Property Image As Drawing.Bitmap

@@ -98,6 +98,7 @@
     <Content Include="hotel4.aspx" />
     <Content Include="hotel5.aspx" />
     <Content Include="Web.config" />
+    <Content Include="menu.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="hotel1.aspx.designer.vb">
@@ -135,13 +136,6 @@
       <DependentUpon>hotel5.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="menu.Master.designer.vb">
-      <DependentUpon>menu.Master</DependentUpon>
-    </Compile>
-    <Compile Include="menu.Master.vb">
-      <DependentUpon>menu.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -161,6 +155,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="menu.aspx.designer.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -171,7 +172,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="menu.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
