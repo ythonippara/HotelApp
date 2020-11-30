@@ -39,7 +39,7 @@
                 End Try
             End Sub
             Sub GoTo_Click(Src As Object, E As EventArgs)
-                Response.Redirect("hotel3.aspx")
+                Response.Redirect("menu.aspx")
             End Sub
         </script>
     </head>
@@ -54,8 +54,7 @@
                     </tr>
                     <tr>
                         <td>Last Name: </td>
-                        <td>
-                            <asp:TextBox id ="LName" runat="server" /></td>
+                        <td><asp:TextBox id ="LName" runat="server" /></td>
                     </tr>
                     <tr>
                         <td>First Name: </td>
@@ -75,16 +74,10 @@
                     </tr>
                 </table>
             </div>
-            <br />
             <div>
-                <asp:Button Text = "Insert" OnClick = "Insert_Click" runat = "server" ID = "Button1" />
-                <p>
-                    <asp:Label id = "msg" runat = "server" />
-                </p>
-            </div>
-            <br />
-            <div>
-                <asp:Button Text = "Retrieve Records" OnClick = "GoTo_Click" runat = "server" ID = "Button2" />
+                <p><asp:Button Text = "Insert" OnClick = "Insert_Click" runat = "server" ID = "Button1" /></p>
+                <p><asp:Label id = "msg" runat = "server" /></p>
+                <p><asp:Button Text = "Back to Main Menu" OnClick = "GoTo_Click" runat = "server" ID = "Button2" /></p>
             </div>
         </form>
     </body>

@@ -28,17 +28,20 @@
             End Try
         End Sub
         Sub GoTo_Click(Src As Object, E As EventArgs)
-            Response.Redirect("hotel2.aspx")
+            Response.Redirect("menu.aspx")
         End Sub
     </script>
 </head>
     <body style = "font-family:Tahoma;">
         <h3>Higgins Hotel Systems</h3>
         <form runat = "server" id = "form1">
-            <asp:Button Text = "Create Table" OnClick = "Create_Click" runat = "server" ID = "Button1" />
-            <p><asp:Label id = "msg" runat = "server" /></p>
-            <br />
-            <asp:Button Text = "Insert Records" OnClick = "GoTo_Click" runat = "server" ID = "Button2" />
+            <div>
+                <p><asp:Button Text = "Create Table" OnClick = "Create_Click" runat = "server" ID = "Button1" /></p>
+                <p><asp:Label id = "msg" runat = "server" /></p>
+            </div>
+            <div>
+                <p><asp:Button Text = "Back to Main Menu" OnClick = "GoTo_Click" runat = "server" ID = "Button2" /></p>
+            </div>
         </form>
     </body>
 </html>

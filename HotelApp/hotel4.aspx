@@ -61,17 +61,19 @@
         End Sub
 
         Sub GoTo_Click(Src As Object, E As EventArgs)
-            Response.Redirect("hotel5.aspx")
+            Response.Redirect("menu.aspx")
         End Sub
     </script>
 </head>
     <body style = "font-family:Tahoma;">
         <h3>Higgins Hotel Systems</h3>
         <form runat = "server" id = "form1">
-            <asp:Button Text = "Create Table" OnClick = "Create_Click" runat = "server" ID = "Button1" />
-            <p><asp:Label id = "msg" runat = "server" /></p>
-        <h3>Enter Staff Member Details</h3>
             <div>
+                <asp:Button Text = "Create Table" OnClick = "Create_Click" runat = "server" ID = "Button1" />
+                <p><asp:Label id = "msg" runat = "server" /></p>
+            </div>
+            <div>
+                <h3>Enter Staff Member Details</h3>
                 <table>
                     <tr>
                         <td>Staff ID: </td>
@@ -90,15 +92,10 @@
                         <td><asp:Textbox id = "HireDate" runat = "server" /></td>
                     </tr>
                 </table>
-                <br />
             </div>
             <div>
-                <asp:Button Text = "Insert" OnClick = "Insert_Click" runat = "server" ID = "Button2" />
-                <br />
-            </div>
-            <br />
-            <div>
-                <asp:Button Text = "Retrieve Records" OnClick = "GoTo_Click" runat = "server" ID = "Button3" />
+                <p><asp:Button Text = "Insert" OnClick = "Insert_Click" runat = "server" ID = "Button2" /></p>
+                <p><asp:Button Text = "Back to Main Menu" OnClick = "GoTo_Click" runat = "server" ID = "Button3" /></p>
             </div>
         </form>
     </body>

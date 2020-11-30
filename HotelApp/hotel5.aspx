@@ -65,6 +65,10 @@
                     Response.Write("Connection Failed")
                 End Try
             End Sub
+
+            Sub GoTo_Click(Src As Object, E As EventArgs)
+                Response.Redirect("menu.aspx")
+            End Sub
         </script>
     </head>
     <body style = "font-family:Tahoma;">
@@ -78,12 +82,13 @@
                     </tr>
                 </table>
             </div>
-            <br />
-            <asp:Button Text = "Search" OnClick = "Search_Click" runat = "server" ID = "Button1" /> 
-            <p>
-                <asp:Label id = "msg" runat = "server" />
-            </p>
+            <div>
+                <p><asp:Button Text = "Search" OnClick = "Search_Click" runat = "server" ID = "Button1" /></p>
+                <p><asp:Label id = "msg" runat = "server" /></p>
+            </div>
+            <div>
+                <p><asp:Button Text = "Back to Main Menu" OnClick = "GoTo_Click" runat = "server" ID = "Button2" /></p>
+            </div>
         </form>
-        <div></div>
     </body>
 </html>
